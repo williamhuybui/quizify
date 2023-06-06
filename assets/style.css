@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: Public Sans;
+}
+#nav-bar{
+    background-color: #d6f0e3;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+.btn {
+    display: flex;
+    margin-left: auto;
+    background-color: #03A6A6;
+    border-radius: 10px;
+    border-color: transparent;
+    font-family: Public Sans;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.btn:hover{
+    background-color: #03738C;
+    color: white;
+    border-color: transparent;
+
+
+}
+#next-button, #previous-button, #retake-btn{
+    width: 100px
+}
+#previous-button{
+    margin-left: inherit;
+}
+#text-input{
+    border: 1px solid rgb(198, 199, 204);
+    background-color: rgb(242, 242, 247);
+    padding: 15px;
+    height: 200px;
+    width: 100%;
+    margin: auto;
+
+}
+#text-input-title{
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 25px;
+    color: #00a699;
+    padding: 15px;
+}
+#question-num-label{
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 18px;
+    /* color: #00a699; */
+    padding: 15px;
+}
+#question-num-input{
+    width: 50px;
+    border-radius: 5px;
+}
+#input-group{
+    position: relative;
+    border: 1px solid rgb(198, 199, 204);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+#question-card{
+    position: relative;
+    border: 1px solid rgb(198, 199, 204);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+#question-number-output{
+    display: flex;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 25px;
+    color: #00a699;
+    padding-left: 15px;
+}
+#question-output{
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 15px;
+}
+#radio-answers{
+    padding: 15px;
+    font-size: 18px;
+}
+
+#radio-answers label:hover{
+    color:#00a699
+}
+
+#solution-question{
+    font-weight: 700;
+    font-size: 17px;
+}
