@@ -17,7 +17,7 @@ To run Quizify locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/quizify.git
+   git clone https://github.com/williamhuybui/quizify.git
    ```
 
 2. Navigate to the project directory:
@@ -49,7 +49,7 @@ To run Quizify locally, follow these steps:
 6. Run the application:
 
    ```
-   python app.py
+   python main.py
    ```
 
 7. Access Quizify in your web browser at `http://localhost:8050`.
@@ -57,7 +57,7 @@ To run Quizify locally, follow these steps:
 ## Usage
 
 1. Enter the text you want to convert into a quiz in the provided input field.
-2. Adjust the quiz parameters, such as the number of questions and difficulty level, as desired.
+2. Adjust the quiz parameters, such as the number of questions  as desired.
 3. Click the "Generate Quiz" button.
 4. Quizify will process the text and generate multiple-choice questions based on the input.
 5. Share the generated quiz with others by providing them with the generated link.
@@ -65,7 +65,7 @@ To run Quizify locally, follow these steps:
 
 ## Contributing
 
-Contributions to Quizify are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on the [GitHub repository](https://github.com/your-username/quizify/issues). If you would like to contribute code, please follow these steps:
+Contributions to Quizify are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on the [GitHub repository](https://github.com/williamhuybui/quizify.git). If you would like to contribute code, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
@@ -81,14 +81,11 @@ Quizify is released under the [MIT License](https://opensource.org/licenses/MIT)
 
 ## Acknowledgements
 
-- This application was built using the [Dash](https
-
-://dash.plotly.com/) framework.
+- This application was built using the [Dash](https://dash.plotly.com/) framework.
 - Quizify utilizes the power of the [OpenAI API](https://platform.openai.com/) for text-to-question translation.
 
 ## Contact
 
 If you have any questions or feedback, feel free to reach out:
 
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- Twitter: [@your-twitter-handle](https://twitter.com/your-twitter-handle)
+- Email: [williamhuybui@gmail.com](mailto:williamhuybui@gmail.com)
