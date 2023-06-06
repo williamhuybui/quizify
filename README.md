@@ -82,3 +82,13 @@ Quizify is released under the [MIT License](https://opensource.org/licenses/MIT)
 ## Acknowledgements
 
 - This application was built using the [Dash](https
+
+://dash.plotly.com/) framework.
+- Quizify utilizes the power of the [OpenAI API](https://platform.openai.com/) for text-to-question translation.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out:
+
+- Email: [your-email@example.com](mailto:your-email@example.com)
+- Twitter: [@your-twitter-handle](https://twitter.com/your-twitter-handle)
