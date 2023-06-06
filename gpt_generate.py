@@ -1,5 +1,5 @@
 import openai
-openai.api_key = "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"
+openai.api_key = "your_API"
 def question_generator(prompt, model = "gpt-3.5-turbo"):
     """
     Receive a prompt and return the output from ChatGPT
