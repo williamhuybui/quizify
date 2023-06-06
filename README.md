@@ -1,4 +1,5 @@
 # Quizify
+![Example Image](cover.PNG)
 
 Quizify is a web application built using Dash that leverages the OpenAI API to translate text inputs into multiple-choice questions. With Quizify, you can easily convert paragraphs, articles, or any other text into interactive quizzes, making it a valuable tool for educators, content creators, and anyone looking to engage their audience through interactive learning experiences.
 
