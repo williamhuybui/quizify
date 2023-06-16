@@ -1,92 +1,71 @@
-# Quizify
+# QuizifyMe
 ![Example Image](cover.PNG)
 
-Quizify is a web application built using Dash that leverages the OpenAI API to translate text inputs into multiple-choice questions. With Quizify, you can easily convert paragraphs, articles, or any other text into interactive quizzes, making it a valuable tool for educators, content creators, and anyone looking to engage their audience through interactive learning experiences.
+QuizifyMe is an innovative and interactive learning application designed to make studying more engaging and efficient. With QuizifyMe, you can transform your study sessions into captivating quizzes that foster a deeper understanding of the subject matter.
 
 ## Features
 
-- **Text-to-Question Translation**: Quizify utilizes the power of the OpenAI API to automatically generate multiple-choice questions from text inputs. Simply provide your text, and Quizify will transform it into a quiz format, complete with answer options.
-- **Customizable Quiz Parameters**: Quizify allows you to fine-tune various parameters of your quizzes, such as the number of questions, difficulty level, and more. Tailor your quizzes to suit your specific needs and audience.
-- **Interactive User Interface**: The user interface of Quizify is intuitive and user-friendly, providing a seamless experience for both quiz creators and quiz takers.
-- **Real-time Feedback**: Quizify provides instant feedback to quiz takers, allowing them to see their progress and results immediately after completing a quiz.
-- **Quiz History**: Quizify keeps track of the quizzes you have created, allowing you to access and review them at any time.
+- **Question Generation**: QuizifyMe utilizes state-of-the-art models to generate thought-provoking questions based on your input. Whether you provide a customized text or extract content from a Wikipedia URL, QuizifyMe leverages the power of open-source models to create engaging questions.
 
-## Installation
+- **Multiple-Choice Options**: In addition to generating questions, QuizifyMe also generates multiple-choice options for each question. This ensures that you not only answer the questions but also have the opportunity to evaluate different possibilities, enhancing your critical thinking skills.
 
-To run Quizify locally, follow these steps:
+- **Adaptive Learning**: QuizifyMe adapts to your learning needs and preferences. The application intelligently selects questions and adjusts the difficulty level based on your progress, ensuring an optimal learning experience tailored to your unique requirements.
 
-1. Clone the repository:
+- **User-Friendly Interface**: QuizifyMe features a user-friendly interface that makes it easy to navigate and interact with the application. The intuitive design enables seamless access to quizzes, performance tracking, and personalized study recommendations.
 
-   ```
-   git clone https://github.com/williamhuybui/quizify.git
-   ```
+## How It Works
 
-2. Navigate to the project directory:
+1. **Input**: You can input your own customized text or provide a Wikipedia URL from which QuizifyMe extracts relevant content for generating questions.
 
-   ```
-   cd quizify
-   ```
+2. **Question Generation**: QuizifyMe employs open-source models to analyze the input and generate high-quality questions that test your knowledge and understanding of the topic.
 
-3. Install the required dependencies:
+3. **Multiple-Choice Options**: To ensure a comprehensive learning experience, QuizifyMe generates multiple-choice options for each question. This allows you to consider various possibilities and select the most appropriate answer.
 
+4. **Interactive Quizzing**: Engage in interactive quizzes where you answer the generated questions and select the correct option from the multiple-choice answers. QuizifyMe provides instant feedback on your answers, allowing you to track your progress and identify areas for improvement.
+
+5. **Adaptive Learning**: QuizifyMe adapts to your performance and adjusts the difficulty level of the questions accordingly. This adaptive learning approach ensures that you are consistently challenged and motivated to enhance your knowledge.
+
+## Get Started
+1. Open a command prompt or terminal window.
+2. Navigate to the directory.
+3. Once you are in the correct directory, run the following command to install the requirements:
    ```
    pip install -r requirements.txt
    ```
-
-4. Obtain an OpenAI API key by following the instructions in the [OpenAI API documentation](https://platform.openai.com/docs/authentication).
-
-5. Set the API key as an environment variable. You can either export it in your terminal session or store it in a `.env` file in the project root directory:
-
-   ```
-   export OPENAI_API_KEY=<your-api-key>
-   ```
-
-   or
-
-   ```
-   OPENAI_API_KEY=<your-api-key>
-   ```
-
-6. Run the application:
-
-   ```
-   python main.py
-   ```
-
-7. Access Quizify in your web browser at `http://localhost:8050`.
+4. Download model weights by running `model_installation.py`.
 
 ## Usage
+- To test the model, use `test.ipynb`.
+- To run the whole application, execute `app.py`.
 
-1. Enter the text you want to convert into a quiz in the provided input field.
-2. Adjust the quiz parameters, such as the number of questions  as desired.
-3. Click the "Generate Quiz" button.
-4. Quizify will process the text and generate multiple-choice questions based on the input.
-5. Share the generated quiz with others by providing them with the generated link.
-6. Quiz takers can access the quiz through the provided link, answer the questions, and receive real-time feedback.
+## Model 
+We used two open-source models available on Hugging Face:
 
-## Contributing
+- Question Answer Generation: [potsawee/t5-large-generation-squad-QuestionAnswer](https://huggingface.co/potsawee/t5-large-generation-squad-QuestionAnswer)
+- Distractor Generation: [potsawee/t5-large-generation-race-Distractor](https://huggingface.co/potsawee/t5-large-generation-race-Distractor)
 
-Contributions to Quizify are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on the [GitHub repository](https://github.com/williamhuybui/quizify.git). If you would like to contribute code, please follow these steps:
+## Dataset Overview
+- Question-Answer Generation utilized the [SQUAD dataset](https://huggingface.co/datasets/squad/viewer/plain_text/train?row=0). It consists of short paragraphs (contexts), questions, and answers.
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make the necessary changes and commit them.
-4. Push your branch to your forked repository.
-5. Submit a pull request to the `main` branch of the original repository.
+  Example:
+  ```
+  Context: "Architecturally, the school has a Catholic character. Atop the Main Building's gold dome is a golden statue of the Virgin Mary. Immediately in front of the Main Building and facing it, is a copper statue of Christ with arms upraised..."
+  Question: "To whom did the Virgin Mary allegedly appear in 1858 in Lourdes France?"
+  Answer: "Saint Bernadette Soubirous"
+  ```
 
-Please ensure that your code adheres to the existing coding style and is well-documented.
+- Multiple Choices Generation utilized the [RACE dataset](https://huggingface.co/datasets/race). It contains contexts (paragraphs), four answers, a correct answer, and the text used to generate the question.
 
-## License
-
-Quizify is released under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute this application as per the terms of the license.
-
-## Acknowledgements
-
-- This application was built using the [Dash](https://dash.plotly.com/) framework.
-- Quizify utilizes the power of the [OpenAI API](https://platform.openai.com/) for text-to-question translation.
+  Example:
+  ```
+  Article: "The rain had continued for a week and the flood had created a big river which was running by Nancy Brown's farm..."
+  Answer: "C"
+  Question: "What did Nancy try to do before she fell over?"
+  Options: [ "Measure the depth of the river", "Look for a fallen tree trunk", "Protect her cows from being drowned", "Run away from the flooded farm" ]
+  ```
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out:
+If you have any questions or feedback, feel free to reach out to us:
 
 - Email: [williamhuybui@gmail.com](mailto:williamhuybui@gmail.com)
