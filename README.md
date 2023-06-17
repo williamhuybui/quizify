@@ -1,5 +1,5 @@
 # QuizifyMe
-![Cover](cover.PNG)
+![Cover](cover_img/cover.PNG)
 
 QuizifyMe is an innovative and interactive learning application designed to make studying more engaging and efficient. With QuizifyMe, you can transform your study sessions into captivating quizzes that foster a deeper understanding of the subject matter.
 
@@ -23,7 +23,7 @@ We used two open-source models available on Hugging Face:
 - Distractor Generation: [potsawee/t5-large-generation-race-Distractor](https://huggingface.co/potsawee/t5-large-generation-race-Distractor)
 
 The following chart shows the architecture of the app:
-![architecture](architecture.PNG)
+![architecture](cover_img/model.PNG)
 
 - Question-Answer Generation utilized the [SQUAD dataset](https://huggingface.co/datasets/squad/viewer/plain_text/train?row=0). It consists of short paragraphs (contexts), questions, and answers.
 
