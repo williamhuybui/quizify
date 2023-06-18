@@ -13,17 +13,17 @@ QuizifyMe is an innovative and interactive learning application designed to make
 4. Download model weights by running `model_installation.py`. The file is quite large (5.5 gb), but once downloaded you can run the jupyter notebook to test or run the entire app (Instruction below). After download if folder will look like this:
 ```
 models
-* g1_model
++ g1_model
 -- config
 -- pytorch_model.bin
-* g1_tokenizer
++ g1_tokenizer
 -- special_tokens_map
 -- tokenizer
 -- tokenizer_config
-* g2_model
++ g2_model
 -- config
 -- pytorch_model.bin
-* g2_tokenizer
++ g2_tokenizer
 -- special_tokens_map
 -- tokenizer
 -- tokenizer_config
