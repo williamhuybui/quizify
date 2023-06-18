@@ -1,7 +1,11 @@
-# QuizifyMe
+# [QuizifyMe](https://quizifyme.herokuapp.com/)
 ![Cover](cover_img/cover.PNG)
 
 QuizifyMe is an innovative and interactive learning application designed to make studying more engaging and efficient. With QuizifyMe, you can transform your study sessions into captivating quizzes that foster a deeper understanding of the subject matter.
+
+## Video Demo
+
+<video src="https://www.youtube.com/watch?v=oROc3j2z3Ug" controls></video>
 
 ## Get Started
 1. Open a command prompt or terminal window.
@@ -32,7 +36,8 @@ models
 ## Usage
 - To test the model, use `test.ipynb`.
 - To run the whole application, execute `app.py`.
-
+- To check out the deployed app, go here: https://quizifyme.herokuapp.com/
+  
 ## Model and Dataset
 We used two open-source models available on Hugging Face:
 
