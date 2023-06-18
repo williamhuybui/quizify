@@ -4,11 +4,68 @@ body{
     font-family: Public Sans;
 }
 #nav-bar{
+    display:flex;
     background-color: #d6f0e3;
     padding-top: 15px;
     padding-left: 30px;
     padding-bottom: 15px;
 }
+
+#logo{
+    padding: 0px;
+    height: 3.5rem;
+    padding-right: 10px;
+}
+#logo_alt {
+    padding: 0px;
+    height: 3.5rem;
+    padding-right: 10px;
+}
+@media (max-width: 415px) {
+    #logo {
+        display:none;
+    }
+    #logo_alt {
+        display: block;
+    }
+}
+@media (min-width: 416px) {
+    #logo {
+        display:block;
+    }
+    #logo_alt {
+        display: none;
+    }
+}
+#text-nav, #url-nav {
+    border-radius: 10px;
+    border-color: transparent;
+    font-family: Public Sans;
+    font-weight: 700;
+    justify-content: center;
+    margin-left: 17px;
+    width: 100px;
+    height: 55px;
+    font-size: larger;
+}
+
+
+#text-nav:hover, #url-nav:hover {
+    background-color: #CAE0D3;
+
+    color: #03738C;
+}
+.nav-inactive{
+    background-color: #d6f0e3;
+    color: #03738C;
+}
+.nav-active {
+    /* Add your active button styles here */
+    background-color: #03738C;
+    color: white;
+}
+
+
 .btn {
     display: flex;
     margin-left: auto;
@@ -24,50 +81,59 @@ body{
     background-color: #03738C;
     color: white;
     border-color: transparent;
-
-
 }
-#next-button, #previous-button, #retake-btn{
+#next-button, #previous-button, #retake-btn,#next-button-2, #previous-button-2, #retake-btn-2{
     width: 100px
 }
-#previous-button{
+#previous-button, #previous-button-2{
     margin-left: inherit;
 }
-#text-input{
+#text-input, #url-content-input{
     border: 1px solid rgb(198, 199, 204);
     background-color: rgb(242, 242, 247);
     padding: 15px;
     height: 200px;
     width: 100%;
     margin: auto;
-
 }
-#text-input-title{
+#url-input{
+    border: 1px solid rgb(198, 199, 204);
+    background-color: rgb(242, 242, 247);
+    padding: 15px;
+    margin: auto;
+    width: 100%;
+    height: 25px;
+}
+#text-input-title, #url-input-title, #content-title{
     font-family: Public Sans;
     font-weight: 700;
     font-size: 25px;
     color: #00a699;
     padding: 15px;
 }
-#question-num-label{
+
+#extract-btn{
+    margin-top: 10px;
+}
+#question-num-label, #question-num-label-2{
     font-family: Public Sans;
     font-weight: 700;
     font-size: 18px;
     /* color: #00a699; */
     padding: 15px;
 }
-#question-num-input{
+#question-num-input, #question-num-input-2{
     width: 50px;
     border-radius: 5px;
 }
-#input-group{
+#input-group, #input-group-2, #input-group-3{
     position: relative;
     border: 1px solid rgb(198, 199, 204);
     padding: 15px;
     margin-top: 10px;
     border-radius: 20px;
 }
-#question-card{
+#question-card, #question-card-2{
     position: relative;
     border: 1px solid rgb(198, 199, 204);
     padding: 15px;
@@ -75,7 +141,7 @@ body{
     border-radius: 20px;
 }
 
-#question-number-output{
+#question-number-output, #question-number-output-2{
     display: flex;
     font-family: Public Sans;
     font-weight: 700;
@@ -83,21 +149,25 @@ body{
     color: #00a699;
     padding-left: 15px;
 }
-#question-output{
+#question-output, #question-output-2{
     font-weight: 500;
     font-size: 20px;
     padding-left: 15px;
 }
-#radio-answers{
+#radio-answers, #radio-answers-2{
     padding: 15px;
     font-size: 18px;
 }
 
-#radio-answers label:hover{
+#radio-answers label:hover, #radio-answers-2 label:hover{
     color:#00a699
 }
 
-#solution-question{
+#solution-question, #solution-question-2{
     font-weight: 700;
     font-size: 17px;
+}
+
+#question-card, #question-card-2{
+   margin-bottom: 50px
 }
