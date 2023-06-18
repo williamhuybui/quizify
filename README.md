@@ -5,7 +5,7 @@ QuizifyMe is an innovative and interactive learning application designed to make
 
 ## Video Demo
 
-![Video](https://www.youtube.com/watch?v=oROc3j2z3Ug)
+[![Demo Video](https://img.youtube.com/vi/oROc3j2z3Ug/0.jpg)](https://www.youtube.com/watch?v=oROc3j2z3Ug)
 
 ## Get Started
 1. Open a command prompt or terminal window.
